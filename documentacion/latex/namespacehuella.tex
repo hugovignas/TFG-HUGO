@@ -1,0 +1,86 @@
+\doxysection{huella Namespace Reference}
+\hypertarget{namespacehuella}{}\label{namespacehuella}\index{huella@{huella}}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacehuella_a7ff3bf3ebd08ebf0dd53e80de44de007}{picos}} (\mbox{\hyperlink{namespacehuella_ad80aad2399ce933f8b687e42f96639d8}{espectograma}})
+\item 
+\mbox{\hyperlink{namespacehuella_aeb553f4897da794a6c77736e8218f5ab}{hashes}} (frecuencias, tiempos, tipohash)
+\item 
+\mbox{\hyperlink{namespacehuella_ad80aad2399ce933f8b687e42f96639d8}{espectograma}} (muestreo)
+\item 
+\mbox{\hyperlink{namespacehuella_ac9a6f7a762df61496cfb981b96c8a2cb}{huella}} (muestreo, tipohash)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}@file huella.py
+@brief Módulo de creación de huellas digitales
+@details Este archivo contiene las funciones necesarias para la creación de una 
+huella digital a partir de un array de bytes que compongan la muestra de una señal. 
+Dispone de tres funcionalidades principales
+,creación de espectogramas, búsqueda de máximos, y creación de hashes.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Function Documentation}
+\Hypertarget{namespacehuella_ad80aad2399ce933f8b687e42f96639d8}\index{huella@{huella}!espectograma@{espectograma}}
+\index{espectograma@{espectograma}!huella@{huella}}
+\doxysubsubsection{\texorpdfstring{espectograma()}{espectograma()}}
+{\footnotesize\ttfamily \label{namespacehuella_ad80aad2399ce933f8b687e42f96639d8} 
+huella.\+espectograma (\begin{DoxyParamCaption}\item[{}]{muestreo}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}@brief Esta función obtiene un espectograma a partir de un muestreo de bytes. 
+El espectograma también dependerá del tamaño de ventana FFT escogido, de la tasa de muestreo
+y del valor de solapamiento que queremos para la STFT.
+
+
+@param muestreo  Array de bytes correspondientes a un archivo de audio
+@return espectograma  Array 2D  de numpy que representa el espectograma del muestreo
+\end{DoxyVerb}
+ \Hypertarget{namespacehuella_aeb553f4897da794a6c77736e8218f5ab}\index{huella@{huella}!hashes@{hashes}}
+\index{hashes@{hashes}!huella@{huella}}
+\doxysubsubsection{\texorpdfstring{hashes()}{hashes()}}
+{\footnotesize\ttfamily \label{namespacehuella_aeb553f4897da794a6c77736e8218f5ab} 
+huella.\+hashes (\begin{DoxyParamCaption}\item[{}]{frecuencias}{, }\item[{}]{tiempos}{, }\item[{}]{tipohash}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}@brief Esta función compara picos de frecuencia encontrados, y si se encuentran a la distancia 
+necesaria, se genera un hash asociado al par.
+
+
+@param frecuencias lista de picos de frecuencias
+@param tiempos lista de tiempos asociados a los picos de frecuencias
+@param tipohash Algoritmo que se quiere aplicar al hashing
+
+@return Array de picos de frecuencia hasheados para definir la huella digital
+\end{DoxyVerb}
+ \Hypertarget{namespacehuella_ac9a6f7a762df61496cfb981b96c8a2cb}\index{huella@{huella}!huella@{huella}}
+\index{huella@{huella}!huella@{huella}}
+\doxysubsubsection{\texorpdfstring{huella()}{huella()}}
+{\footnotesize\ttfamily \label{namespacehuella_ac9a6f7a762df61496cfb981b96c8a2cb} 
+huella.\+huella (\begin{DoxyParamCaption}\item[{}]{muestreo}{, }\item[{}]{tipohash}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}@brief Esta función crea la huella digital utilizando el resto de métodos 
+de espectograma, picos y hashes.
+
+
+@param muestreo  Array de bytes correspondientes a un archivo de audio
+@param tipohash Algoritmo que se quiere aplicar al hashing
+@return Array correspondiente a la huella digital
+\end{DoxyVerb}
+ \Hypertarget{namespacehuella_a7ff3bf3ebd08ebf0dd53e80de44de007}\index{huella@{huella}!picos@{picos}}
+\index{picos@{picos}!huella@{huella}}
+\doxysubsubsection{\texorpdfstring{picos()}{picos()}}
+{\footnotesize\ttfamily \label{namespacehuella_a7ff3bf3ebd08ebf0dd53e80de44de007} 
+huella.\+picos (\begin{DoxyParamCaption}\item[{}]{espectograma}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}@brief Esta función detecta los picos máximos en un espectograma utilizando filtros de máximos locales. 
+De dichos máximos, la función se queda con aquellosque superen un umbral específico de amplitud. 
+Hay que definir en la función el valor de vecindad a para el que vamos a tener en cuenta 
+comparación de cercanía.
+
+
+@param espectograma  Array 2D  de numpy que representa el espectograma del muestreo
+@return Listas asociadas a picos de frecuencia y 
+\end{DoxyVerb}
+ 

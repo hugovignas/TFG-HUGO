@@ -1,0 +1,121 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\XV258VW\\OneDrive - EY\\Desktop\\PROYECTO SHAZAM\\PROYECTO\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\XV258VW\\OneDrive - EY\\Desktop\\PROYECTO SHAZAM\\PROYECTO\\interfaz.py||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:interfaz.py||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\XV258VW\\OneDrive - EY\\Desktop\\PROYECTO SHAZAM\\PROYECTO\\huella.py||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:huella.py||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\XV258VW\\OneDrive - EY\\Desktop\\PROYECTO SHAZAM\\PROYECTO\\bd.py||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:bd.py||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\XV258VW\\OneDrive - EY\\Desktop\\PROYECTO SHAZAM\\PROYECTO\\grabadora.py||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:grabadora.py||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\XV258VW\\OneDrive - EY\\Desktop\\PROYECTO SHAZAM\\PROYECTO\\comparador.py||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:comparador.py||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\XV258VW\\OneDrive - EY\\Desktop\\PROYECTO SHAZAM\\PROYECTO\\entrenador.py||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:entrenador.py||{8B382828-6202-11D1-8870-0000F87579D2}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "interfaz.py",
+              "DocumentMoniker": "C:\\Users\\XV258VW\\OneDrive - EY\\Desktop\\PROYECTO SHAZAM\\PROYECTO\\interfaz.py",
+              "RelativeDocumentMoniker": "interfaz.py",
+              "ToolTip": "C:\\Users\\XV258VW\\OneDrive - EY\\Desktop\\PROYECTO SHAZAM\\PROYECTO\\interfaz.py",
+              "RelativeToolTip": "interfaz.py",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAAG0AAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-11-17T12:56:52.208Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "bd.py",
+              "DocumentMoniker": "C:\\Users\\XV258VW\\OneDrive - EY\\Desktop\\PROYECTO SHAZAM\\PROYECTO\\bd.py",
+              "RelativeDocumentMoniker": "bd.py",
+              "ToolTip": "C:\\Users\\XV258VW\\OneDrive - EY\\Desktop\\PROYECTO SHAZAM\\PROYECTO\\bd.py",
+              "RelativeToolTip": "bd.py",
+              "ViewState": "AQIAAF0AAAAAAAAAAAAAAAsAAAALAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-11-10T09:01:59.98Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "huella.py",
+              "DocumentMoniker": "C:\\Users\\XV258VW\\OneDrive - EY\\Desktop\\PROYECTO SHAZAM\\PROYECTO\\huella.py",
+              "RelativeDocumentMoniker": "huella.py",
+              "ToolTip": "C:\\Users\\XV258VW\\OneDrive - EY\\Desktop\\PROYECTO SHAZAM\\PROYECTO\\huella.py",
+              "RelativeToolTip": "huella.py",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAJ0AAAATAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-10-19T16:04:48.737Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "grabadora.py",
+              "DocumentMoniker": "C:\\Users\\XV258VW\\OneDrive - EY\\Desktop\\PROYECTO SHAZAM\\PROYECTO\\grabadora.py",
+              "RelativeDocumentMoniker": "grabadora.py",
+              "ToolTip": "C:\\Users\\XV258VW\\OneDrive - EY\\Desktop\\PROYECTO SHAZAM\\PROYECTO\\grabadora.py",
+              "RelativeToolTip": "grabadora.py",
+              "ViewState": "AQIAACkAAAAAAAAAAAAjwD4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-10-10T18:04:15.707Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "entrenador.py",
+              "DocumentMoniker": "C:\\Users\\XV258VW\\OneDrive - EY\\Desktop\\PROYECTO SHAZAM\\PROYECTO\\entrenador.py",
+              "RelativeDocumentMoniker": "entrenador.py",
+              "ToolTip": "C:\\Users\\XV258VW\\OneDrive - EY\\Desktop\\PROYECTO SHAZAM\\PROYECTO\\entrenador.py",
+              "RelativeToolTip": "entrenador.py",
+              "ViewState": "AQIAAE4AAAAAAAAAAAAAAC4AAAA2AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-10-19T18:02:36.649Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "comparador.py",
+              "DocumentMoniker": "C:\\Users\\XV258VW\\OneDrive - EY\\Desktop\\PROYECTO SHAZAM\\PROYECTO\\comparador.py",
+              "RelativeDocumentMoniker": "comparador.py",
+              "ToolTip": "C:\\Users\\XV258VW\\OneDrive - EY\\Desktop\\PROYECTO SHAZAM\\PROYECTO\\comparador.py",
+              "RelativeToolTip": "comparador.py",
+              "ViewState": "AQIAAD8AAAAAAAAAAAAAwFsAAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-10-10T17:56:45.26Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

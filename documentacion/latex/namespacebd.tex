@@ -1,0 +1,138 @@
+\doxysection{bd Namespace Reference}
+\hypertarget{namespacebd}{}\label{namespacebd}\index{bd@{bd}}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacebd_a8ebbdad522c363e496ae2afd209ea4b0}{almacenar\+\_\+huellas}} (nombre, huella)
+\item 
+\mbox{\hyperlink{namespacebd_a37d2ec9bdd21ad0f52514dfb39b01404}{almacenar\+\_\+metadatos}} (nombre, artista, anyo, album)
+\item 
+\mbox{\hyperlink{namespacebd_add1748e4144a3d4ce0617fed5f97f978}{cargar\+\_\+huellas}} ()
+\item 
+\mbox{\hyperlink{namespacebd_a11a5f5ee99e5637e41d4c047bfe8b31f}{cargar\+\_\+huellas\+\_\+restringida}} (array)
+\item 
+\mbox{\hyperlink{namespacebd_afdc9d2e2a060bd417ff122087b3c24dc}{cargar\+\_\+huellas\+\_\+restringido\+\_\+a\+\_\+porcentaje}} (array, porcentaje=0.\+1)
+\item 
+\mbox{\hyperlink{namespacebd_a186733e1e7dbe5f477e4db637fcb5949}{obtener\+\_\+metadatos}} (nombre)
+\item 
+\mbox{\hyperlink{namespacebd_acb8a2e111ec5a4ce1352e289b41aa415}{limpiar\+\_\+bd}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{namespacebd_ab1c6a036e61a0fee2f37a49ddcd0bdbf}\label{namespacebd_ab1c6a036e61a0fee2f37a49ddcd0bdbf} 
+str {\bfseries uri} = "{}mongodb\+://localhost\+:27017/"{}
+\item 
+\Hypertarget{namespacebd_ad094f9ed775ce2aee6b7a59fd48080df}\label{namespacebd_ad094f9ed775ce2aee6b7a59fd48080df} 
+{\bfseries client} = Mongo\+Client(uri)
+\item 
+\Hypertarget{namespacebd_a88014f65579d9f0662a769d502df299e}\label{namespacebd_a88014f65579d9f0662a769d502df299e} 
+{\bfseries db} = client\mbox{[}"{}Music\+Fingerprints"{}\mbox{]}
+\item 
+\Hypertarget{namespacebd_abc67af746dbd999e6256470323c2e42a}\label{namespacebd_abc67af746dbd999e6256470323c2e42a} 
+{\bfseries huellas} = db\mbox{[}"{}Fingerprints"{}\mbox{]}
+\item 
+\Hypertarget{namespacebd_ad6abd8769458c0551b1ee2209387a9b5}\label{namespacebd_ad6abd8769458c0551b1ee2209387a9b5} 
+{\bfseries metadatos} = db\mbox{[}"{}Metadatos"{}\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}@file bd.py
+@brief Módulo de gestión de base de atos
+@details Este archivo contiene las funciones necesarias para la gestión de los 
+almacenes de datos del sistema y su explotación.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Function Documentation}
+\Hypertarget{namespacebd_a8ebbdad522c363e496ae2afd209ea4b0}\index{bd@{bd}!almacenar\_huellas@{almacenar\_huellas}}
+\index{almacenar\_huellas@{almacenar\_huellas}!bd@{bd}}
+\doxysubsubsection{\texorpdfstring{almacenar\_huellas()}{almacenar\_huellas()}}
+{\footnotesize\ttfamily \label{namespacebd_a8ebbdad522c363e496ae2afd209ea4b0} 
+bd.\+almacenar\+\_\+huellas (\begin{DoxyParamCaption}\item[{}]{nombre}{, }\item[{}]{huella}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}@brief Esta función genera una entrada en la colección de huellas
+
+
+@param nombre String corespondiente al título de la canción
+@param huella Array de huellas de la canción indicada
+@return None 
+\end{DoxyVerb}
+ \Hypertarget{namespacebd_a37d2ec9bdd21ad0f52514dfb39b01404}\index{bd@{bd}!almacenar\_metadatos@{almacenar\_metadatos}}
+\index{almacenar\_metadatos@{almacenar\_metadatos}!bd@{bd}}
+\doxysubsubsection{\texorpdfstring{almacenar\_metadatos()}{almacenar\_metadatos()}}
+{\footnotesize\ttfamily \label{namespacebd_a37d2ec9bdd21ad0f52514dfb39b01404} 
+bd.\+almacenar\+\_\+metadatos (\begin{DoxyParamCaption}\item[{}]{nombre}{, }\item[{}]{artista}{, }\item[{}]{anyo}{, }\item[{}]{album}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}@brief Esta función genera una entrada en la colección de metadatos
+
+
+@param nombre String corespondiente al título de la canción
+@param artista String correspondiente al nombre del artista
+@param anyo String correspondiente al año
+@param album String correspondiente al album
+@return None 
+\end{DoxyVerb}
+ \Hypertarget{namespacebd_add1748e4144a3d4ce0617fed5f97f978}\index{bd@{bd}!cargar\_huellas@{cargar\_huellas}}
+\index{cargar\_huellas@{cargar\_huellas}!bd@{bd}}
+\doxysubsubsection{\texorpdfstring{cargar\_huellas()}{cargar\_huellas()}}
+{\footnotesize\ttfamily \label{namespacebd_add1748e4144a3d4ce0617fed5f97f978} 
+bd.\+cargar\+\_\+huellas (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}@brief Esta función devuelve todas las entradas de la base de datos
+
+@return Lista de huellas 
+\end{DoxyVerb}
+ \Hypertarget{namespacebd_a11a5f5ee99e5637e41d4c047bfe8b31f}\index{bd@{bd}!cargar\_huellas\_restringida@{cargar\_huellas\_restringida}}
+\index{cargar\_huellas\_restringida@{cargar\_huellas\_restringida}!bd@{bd}}
+\doxysubsubsection{\texorpdfstring{cargar\_huellas\_restringida()}{cargar\_huellas\_restringida()}}
+{\footnotesize\ttfamily \label{namespacebd_a11a5f5ee99e5637e41d4c047bfe8b31f} 
+bd.\+cargar\+\_\+huellas\+\_\+restringida (\begin{DoxyParamCaption}\item[{}]{array}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}@brief Esta función devuelve las entradas de la base de datos que tengan al menos 
+una coincidencia con un array
+
+@param array Array de huellas con el que se quiere comparar
+
+@return Lista de huellas 
+\end{DoxyVerb}
+ \Hypertarget{namespacebd_afdc9d2e2a060bd417ff122087b3c24dc}\index{bd@{bd}!cargar\_huellas\_restringido\_a\_porcentaje@{cargar\_huellas\_restringido\_a\_porcentaje}}
+\index{cargar\_huellas\_restringido\_a\_porcentaje@{cargar\_huellas\_restringido\_a\_porcentaje}!bd@{bd}}
+\doxysubsubsection{\texorpdfstring{cargar\_huellas\_restringido\_a\_porcentaje()}{cargar\_huellas\_restringido\_a\_porcentaje()}}
+{\footnotesize\ttfamily \label{namespacebd_afdc9d2e2a060bd417ff122087b3c24dc} 
+bd.\+cargar\+\_\+huellas\+\_\+restringido\+\_\+a\+\_\+porcentaje (\begin{DoxyParamCaption}\item[{}]{array}{, }\item[{}]{porcentaje}{ = {\ttfamily 0.1}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}@brief Esta función devuelve las entradas de la base de datos que tengan un porcentaje 
+de coincidencia con un array
+
+@param array Array de huellas con el que se quiere comparar
+@param porcentaje Porcentaje de coincidencia al que se quiere restringir la carga de BD,
+por defecto 0.1
+
+@return Lista de huellas 
+\end{DoxyVerb}
+ \Hypertarget{namespacebd_acb8a2e111ec5a4ce1352e289b41aa415}\index{bd@{bd}!limpiar\_bd@{limpiar\_bd}}
+\index{limpiar\_bd@{limpiar\_bd}!bd@{bd}}
+\doxysubsubsection{\texorpdfstring{limpiar\_bd()}{limpiar\_bd()}}
+{\footnotesize\ttfamily \label{namespacebd_acb8a2e111ec5a4ce1352e289b41aa415} 
+bd.\+limpiar\+\_\+bd (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}@brief Esta función borra todas las entradas de la base de datos.
+
+@return None
+\end{DoxyVerb}
+ \Hypertarget{namespacebd_a186733e1e7dbe5f477e4db637fcb5949}\index{bd@{bd}!obtener\_metadatos@{obtener\_metadatos}}
+\index{obtener\_metadatos@{obtener\_metadatos}!bd@{bd}}
+\doxysubsubsection{\texorpdfstring{obtener\_metadatos()}{obtener\_metadatos()}}
+{\footnotesize\ttfamily \label{namespacebd_a186733e1e7dbe5f477e4db637fcb5949} 
+bd.\+obtener\+\_\+metadatos (\begin{DoxyParamCaption}\item[{}]{nombre}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}@brief Esta función busca en la colección de metadatos el nombre indicado y 
+muestra por pantalla todos sus metadatos
+
+@param nombre String correspondiente al nombre de una canción
+
+@return None
+\end{DoxyVerb}
+ 

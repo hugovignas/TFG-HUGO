@@ -1,0 +1,84 @@
+\doxysection{comparador Namespace Reference}
+\hypertarget{namespacecomparador}{}\label{namespacecomparador}\index{comparador@{comparador}}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacecomparador_a23b8ebdd67b26db8b9485196462f6f9d}{buscar\+\_\+coincidencias\+\_\+hashes}} (array1, array2)
+\item 
+\mbox{\hyperlink{namespacecomparador_a2fc05c83425f967b47faa0dcd0d3e144}{comparador}} (cancion, tipoalgoritmo, porcentaje=0.\+15)
+\item 
+\mbox{\hyperlink{namespacecomparador_addcba894818c273b119ba708296a4c4d}{comparador\+\_\+al\+\_\+menos\+\_\+una\+\_\+coincidencia}} (cancion, tipoalgoritmo)
+\item 
+\mbox{\hyperlink{namespacecomparador_a5962ff89efb56963a3938bfa052bd740}{comparador\+\_\+bd\+\_\+completa}} (cancion, tipoalgoritmo)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}@file comparador.py
+@brief Módulo de comparativa de conjuntos
+@details Este archivo contiene las funciones necesarias para la obtención de datos 
+por parte de la base de datos para realizar la comparativa con fragmentos de audio
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Function Documentation}
+\Hypertarget{namespacecomparador_a23b8ebdd67b26db8b9485196462f6f9d}\index{comparador@{comparador}!buscar\_coincidencias\_hashes@{buscar\_coincidencias\_hashes}}
+\index{buscar\_coincidencias\_hashes@{buscar\_coincidencias\_hashes}!comparador@{comparador}}
+\doxysubsubsection{\texorpdfstring{buscar\_coincidencias\_hashes()}{buscar\_coincidencias\_hashes()}}
+{\footnotesize\ttfamily \label{namespacecomparador_a23b8ebdd67b26db8b9485196462f6f9d} 
+comparador.\+buscar\+\_\+coincidencias\+\_\+hashes (\begin{DoxyParamCaption}\item[{}]{array1}{, }\item[{}]{array2}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}@brief Esta función obtiene la intersección entre dos arrays de datos.
+
+
+@param array1 Primer array a comparar
+@param array2 Segundo array a comparar
+@return Array de bytes de audio
+\end{DoxyVerb}
+ \Hypertarget{namespacecomparador_a2fc05c83425f967b47faa0dcd0d3e144}\index{comparador@{comparador}!comparador@{comparador}}
+\index{comparador@{comparador}!comparador@{comparador}}
+\doxysubsubsection{\texorpdfstring{comparador()}{comparador()}}
+{\footnotesize\ttfamily \label{namespacecomparador_a2fc05c83425f967b47faa0dcd0d3e144} 
+comparador.\+comparador (\begin{DoxyParamCaption}\item[{}]{cancion}{, }\item[{}]{tipoalgoritmo}{, }\item[{}]{porcentaje}{ = {\ttfamily 0.15}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}@brief Esta función obtiene una muestra, llama a la creación de huella y la compara con la Base de Datos,
+mostrando en pantalla los resultados. Sólo carga en memoria aquellas huellas 
+que tienen un porcentaje de similitud.
+
+
+@param cancion Muestra a comparar
+@param tipoalgoritmo Hash que se quiere aplicar a la comparación
+@param porcentaje Porcentaje mínimo de similitud para extraer de la base de datos
+@return None
+\end{DoxyVerb}
+ \Hypertarget{namespacecomparador_addcba894818c273b119ba708296a4c4d}\index{comparador@{comparador}!comparador\_al\_menos\_una\_coincidencia@{comparador\_al\_menos\_una\_coincidencia}}
+\index{comparador\_al\_menos\_una\_coincidencia@{comparador\_al\_menos\_una\_coincidencia}!comparador@{comparador}}
+\doxysubsubsection{\texorpdfstring{comparador\_al\_menos\_una\_coincidencia()}{comparador\_al\_menos\_una\_coincidencia()}}
+{\footnotesize\ttfamily \label{namespacecomparador_addcba894818c273b119ba708296a4c4d} 
+comparador.\+comparador\+\_\+al\+\_\+menos\+\_\+una\+\_\+coincidencia (\begin{DoxyParamCaption}\item[{}]{cancion}{, }\item[{}]{tipoalgoritmo}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}@brief Esta función obtiene una muestra, llama a la creación de huella y la compara 
+con la Base de Datos, mostrando en pantalla los resultados. Sólo carga en memoria 
+aquellas huellas que tienen al menos una coincidencia con la muestra.
+
+
+@param cancion Muestra a comparar
+@param tipoalgoritmo Hash que se quiere aplicar a la comparación
+@return None
+\end{DoxyVerb}
+ \Hypertarget{namespacecomparador_a5962ff89efb56963a3938bfa052bd740}\index{comparador@{comparador}!comparador\_bd\_completa@{comparador\_bd\_completa}}
+\index{comparador\_bd\_completa@{comparador\_bd\_completa}!comparador@{comparador}}
+\doxysubsubsection{\texorpdfstring{comparador\_bd\_completa()}{comparador\_bd\_completa()}}
+{\footnotesize\ttfamily \label{namespacecomparador_a5962ff89efb56963a3938bfa052bd740} 
+comparador.\+comparador\+\_\+bd\+\_\+completa (\begin{DoxyParamCaption}\item[{}]{cancion}{, }\item[{}]{tipoalgoritmo}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}@brief Esta función obtiene una muestra, llama a la creación de huella y la compara
+con la Base de Datos, mostrando en pantalla los resultados. Se carga toda la base de 
+datos en memoria. Solo recomendable para entorno de pruebas con poca cantidad de huellas.
+
+
+@param cancion Muestra a comparar
+@param tipoalgoritmo Hash que se quiere aplicar a la comparación
+@return None
+\end{DoxyVerb}
+ 

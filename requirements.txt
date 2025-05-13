@@ -1,0 +1,7 @@
+numpy>=1.25.0
+matplotlib>=3.8.0
+scipy>=1.11.0
+pydub>=0.25.1
+sounddevice>=0.4.6
+mutagen>=1.46.0
+pymongo>=4.6.0

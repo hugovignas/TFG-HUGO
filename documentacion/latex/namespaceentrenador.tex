@@ -1,0 +1,81 @@
+\doxysection{entrenador Namespace Reference}
+\hypertarget{namespaceentrenador}{}\label{namespaceentrenador}\index{entrenador@{entrenador}}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespaceentrenador_ace486ca615cd33de23e77b4a082bcc98}{almacenar\+\_\+cancion\+\_\+entrenador}} (ruta, tipohash)
+\item 
+\mbox{\hyperlink{namespaceentrenador_ade90855472547fc440b659d39a9d654c}{entrenar\+\_\+directorio\+\_\+pruebas}} (tipohash)
+\item 
+\mbox{\hyperlink{namespaceentrenador_aafad144e8ae61e4a2b71a572600c4714}{entrenar\+\_\+directorio}} (directorio, tipohash)
+\item 
+\mbox{\hyperlink{namespaceentrenador_a281330921eedc3ef40b57a08f13fcafa}{entrenar\+\_\+archivo}} (ruta\+\_\+archivo, tipohash)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}@file entrenador.py
+@brief Módulo de entrenamiento de la BD del sistema
+@details Este archivo contiene las funciones necesarias para la obtención de metadatos y 
+huellas digitales de archivos de audio con el objetivo de alimentar la base de datos del proyecto.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Function Documentation}
+\Hypertarget{namespaceentrenador_ace486ca615cd33de23e77b4a082bcc98}\index{entrenador@{entrenador}!almacenar\_cancion\_entrenador@{almacenar\_cancion\_entrenador}}
+\index{almacenar\_cancion\_entrenador@{almacenar\_cancion\_entrenador}!entrenador@{entrenador}}
+\doxysubsubsection{\texorpdfstring{almacenar\_cancion\_entrenador()}{almacenar\_cancion\_entrenador()}}
+{\footnotesize\ttfamily \label{namespaceentrenador_ace486ca615cd33de23e77b4a082bcc98} 
+entrenador.\+almacenar\+\_\+cancion\+\_\+entrenador (\begin{DoxyParamCaption}\item[{}]{ruta}{, }\item[{}]{tipohash}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}@brief Esta función obtiene los metadatos de un archivo esepecificado y realiza la llamada al 
+generador de huellas según el tipo de hash especificado.Seguidamente los almacena en su correspondiente 
+colección de datos de la base de datos.
+
+
+@param ruta String correspondiente a la ruta de un archivo  
+@param tipohash Algoritmo que se quiere aplicar al hashing
+@return None 
+\end{DoxyVerb}
+ \Hypertarget{namespaceentrenador_a281330921eedc3ef40b57a08f13fcafa}\index{entrenador@{entrenador}!entrenar\_archivo@{entrenar\_archivo}}
+\index{entrenar\_archivo@{entrenar\_archivo}!entrenador@{entrenador}}
+\doxysubsubsection{\texorpdfstring{entrenar\_archivo()}{entrenar\_archivo()}}
+{\footnotesize\ttfamily \label{namespaceentrenador_a281330921eedc3ef40b57a08f13fcafa} 
+entrenador.\+entrenar\+\_\+archivo (\begin{DoxyParamCaption}\item[{}]{ruta\+\_\+archivo}{, }\item[{}]{tipohash}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}@brief Esta función automatiza la llamada de la función de entrenamiento para un archivo 
+específico. Se realiza la comprobación de existencia del archivo.
+
+
+@param ruta_archivo String correspondiente a la ruta del archivo que se quiere procesar; 
+@param tipohash Algoritmo que se quiere aplicar al hashing
+@return None 
+\end{DoxyVerb}
+ \Hypertarget{namespaceentrenador_aafad144e8ae61e4a2b71a572600c4714}\index{entrenador@{entrenador}!entrenar\_directorio@{entrenar\_directorio}}
+\index{entrenar\_directorio@{entrenar\_directorio}!entrenador@{entrenador}}
+\doxysubsubsection{\texorpdfstring{entrenar\_directorio()}{entrenar\_directorio()}}
+{\footnotesize\ttfamily \label{namespaceentrenador_aafad144e8ae61e4a2b71a572600c4714} 
+entrenador.\+entrenar\+\_\+directorio (\begin{DoxyParamCaption}\item[{}]{directorio}{, }\item[{}]{tipohash}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}@brief Esta función automatiza la llamada de la función de entrenamiento 
+para un directorio especificado.
+
+
+@param directorio String correspondiente a la ruta del directorio que se quiere procesar
+@param tipohash Algoritmo que se quiere aplicar al hashing
+@return None 
+\end{DoxyVerb}
+ \Hypertarget{namespaceentrenador_ade90855472547fc440b659d39a9d654c}\index{entrenador@{entrenador}!entrenar\_directorio\_pruebas@{entrenar\_directorio\_pruebas}}
+\index{entrenar\_directorio\_pruebas@{entrenar\_directorio\_pruebas}!entrenador@{entrenador}}
+\doxysubsubsection{\texorpdfstring{entrenar\_directorio\_pruebas()}{entrenar\_directorio\_pruebas()}}
+{\footnotesize\ttfamily \label{namespaceentrenador_ade90855472547fc440b659d39a9d654c} 
+entrenador.\+entrenar\+\_\+directorio\+\_\+pruebas (\begin{DoxyParamCaption}\item[{}]{tipohash}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}@brief Esta función automatiza la llamada de la función de entrenamiento para un 
+directorio de pruebas predefinido.
+
+
+@param tipohash Algoritmo que se quiere aplicar al hashing
+@return None 
+\end{DoxyVerb}
+ 

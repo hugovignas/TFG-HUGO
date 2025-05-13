@@ -1,0 +1,60 @@
+\doxysection{grabadora Namespace Reference}
+\hypertarget{namespacegrabadora}{}\label{namespacegrabadora}\index{grabadora@{grabadora}}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacegrabadora_a8e28185770334550ffc96f6f6a406572}{grabadora}} (duracion=10)
+\item 
+\mbox{\hyperlink{namespacegrabadora_aca9481494f936f86b93be0d209b7d4cd}{capturadora}} (ruta)
+\item 
+\mbox{\hyperlink{namespacegrabadora_a8cd2c8bf0f7c0dbd5c4247f02abf8922}{capturadora\+\_\+mp3}} (ruta)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}@file grabadora.py
+@brief Módulo de conversión a bytes de audio
+@details Este archivo contiene las funciones necesarias para la grabación de audio 
+vía micrófono y la obtención de bytes a aprtir de archivos MP3
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Function Documentation}
+\Hypertarget{namespacegrabadora_aca9481494f936f86b93be0d209b7d4cd}\index{grabadora@{grabadora}!capturadora@{capturadora}}
+\index{capturadora@{capturadora}!grabadora@{grabadora}}
+\doxysubsubsection{\texorpdfstring{capturadora()}{capturadora()}}
+{\footnotesize\ttfamily \label{namespacegrabadora_aca9481494f936f86b93be0d209b7d4cd} 
+grabadora.\+capturadora (\begin{DoxyParamCaption}\item[{}]{ruta}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}@brief Esta función pasa directamente un archivo a bytes
+
+
+@param ruta  string con la ruta de un archivo
+@return Array de bytes de audio
+\end{DoxyVerb}
+ \Hypertarget{namespacegrabadora_a8cd2c8bf0f7c0dbd5c4247f02abf8922}\index{grabadora@{grabadora}!capturadora\_mp3@{capturadora\_mp3}}
+\index{capturadora\_mp3@{capturadora\_mp3}!grabadora@{grabadora}}
+\doxysubsubsection{\texorpdfstring{capturadora\_mp3()}{capturadora\_mp3()}}
+{\footnotesize\ttfamily \label{namespacegrabadora_a8cd2c8bf0f7c0dbd5c4247f02abf8922} 
+grabadora.\+capturadora\+\_\+mp3 (\begin{DoxyParamCaption}\item[{}]{ruta}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}@brief Esta función captura el array de bytes de un archivo MP3 usando AudioSegment
+
+
+@param ruta  string con la ruta de un archivo
+@return Array de bytes de audio
+\end{DoxyVerb}
+ \Hypertarget{namespacegrabadora_a8e28185770334550ffc96f6f6a406572}\index{grabadora@{grabadora}!grabadora@{grabadora}}
+\index{grabadora@{grabadora}!grabadora@{grabadora}}
+\doxysubsubsection{\texorpdfstring{grabadora()}{grabadora()}}
+{\footnotesize\ttfamily \label{namespacegrabadora_a8e28185770334550ffc96f6f6a406572} 
+grabadora.\+grabadora (\begin{DoxyParamCaption}\item[{}]{duracion}{ = {\ttfamily 10}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}@brief Esta función accede al micrófono del sistema y realiza una 
+grabación de la duración indicada.
+
+
+@param duracion  Entero indicador del tiempo que se quiere grabar, por defecto 10
+@return Array de bytes de audio
+\end{DoxyVerb}
+ 
